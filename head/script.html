@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>script介绍</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>script介绍</h1>
+    <h2>介绍</h2>
+    <p>&lt;script&gt; 标签用于在 HTML 文档中嵌入或引用 JavaScript 代码。可以将 JavaScript 代码直接包含在 &lt;script&gt; 标签内部，或通过 src 属性引用外部 JavaScript 文件。</p>
+    <h2>属性</h2>
+    <p>key：src</p>
+    <p>value：URL</p>
+    <p>介绍：指定外部 JavaScript 文件的路径。</p>
+    <br>
+    <p>key：type</p>
+    <p>value：MIME类型</p>
+    <p>介绍：指定脚本的 MIME 类型。默认值是 <code>text/javascript</code>。对于模块化脚本，使用 <code>module</code>。</p>
+    <br>
+    <p>key：async</p>
+    <p>value：无</p>
+    <p>介绍：如果存在，表示脚本应该异步加载。仅对外部脚本文件有效。</p>
+    <br>
+    <p>key：defer</p>
+    <p>value：无</p>
+    <p>介绍：如果存在，表示脚本在文档解析完毕后执行。仅对外部脚本文件有效。</p>
+    <br>
+    <p>key：integrity</p>
+    <p>value：加密摘要</p>
+    <p>介绍：允许浏览器验证脚本的完整性，确保文件未被篡改。</p>
+    <br>
+    <p>key：nomodule</p>
+    <p>value：无</p>
+    <p>介绍：如果存在，表示脚本是经典脚本，而不是模块。仅在 &lt;script type="module"&gt;时使用 。</p>
+    <br>
+    <p>key：referrerpolicy</p>
+    <p>value：no-referrer | no-referrer-when-downgrade | origin | origin-when-cross-origin | same-origin | strict-origin | strict-origin-when-cross-origin | unsafe-url</p>
+    <p>介绍：设置当请求脚本时，referer 头的策略。</p>
+    <br>
+    <p>key：crossorigin</p>
+    <p>value：anonymous | use-credentials</p>
+    <p>介绍：指定如何处理跨域请求。<code>anonymous</code> 表示不发送用户凭据，<code>use-credentials</code> 表示发送用户凭据。</p>
+    <h2>语法</h2>
+    <p>&lt;script src="script.js" type="module" async defer integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxGPBRUwC/U8VDBwr+8nX7wOnk8F8Er" nomodule referrerpolicy="no-referrer" crossorigin="anonymous"&gt;</p>
+    <pre>    &lt;!--script语法部分--&gt;</pre>
+    <p>&lt;/script&gt;</p>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>提交表单</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>提交表单</h1>
+
+    <section>
+        <h2>Form</h2>
+        <p><code>&lt;form&gt;</code></p>
+        <p>定义一个HTML表单，用于用户输入。</p>
+        <p>写法：<code>&lt;form action="submit.php" method="post"&gt; ... &lt;/form&gt;</code></p>
+        <p>输出：</p>
+        <form action="submit.php" method="post">
+            <!-- 表单内容 -->
+        </form>
+    </section>
+
+    <section>
+        <h2>Form中的内容</h2>
+        <p>组合有：<code>&lt;fieldset&gt; + &lt;legend&gt; +</code>
+            <br>1. <code>&lt;input&gt;</code>
+            <br>2. <code>&lt;input&gt; + &lt;datalist&gt; + &lt;optgroup&gt; + &lt;option&gt;</code>
+            <br>3. <code>&lt;textarea&gt;</code>
+            <br>4. <code>&lt;select&gt;</code>
+            <br>5. <code>&lt;input&gt; + &lt;optgroup&gt; + &lt;option&gt;</code>
+            <br>6. <code>&lt;button&gt;</code></p>
+        
+        <section>
+            <h3>label</h3>
+            <p><code>&lt;label&gt;</code></p>
+            <p>定义一个表单控件的标签。</p>
+            <p>写法：<code>&lt;label for="username"&gt;用户名&lt;/label&gt; &lt;input type="text" id="username"&gt;</code></p>
+            <p>输出：<label for="username">用户名</label> <input type="text" id="username" value=""></p>
+        </section>
+
+        <section>
+            <h3>input</code></h3>
+            <p><code>&lt;input&gt;</code></p>
+            <p>定义一个输入控件，比如文本框、复选框或按钮。</p>
+            <p>写法：<code>&lt;input type="text" name="firstname"&gt;</code></p>
+            <p>输出：<input type="text" name="firstname" value=""></p>    
+        </section>
+
+        <section>
+            <h3>textarea</h3>
+            <p><code>&lt;textarea&gt;</code></p>
+            <p>定义一个多行文本输入控件。</p>
+            <p>写法：<code>&lt;textarea name="message"&gt;默认文本&lt;/textarea&gt;</code></p>
+            <p>输出：<textarea name="message">默认文本</textarea></p>
+            
+        </section>
+
+        <section>
+            <h3>button</h3>
+            <p><code>&lt;button&gt;</code></p>
+            <p>定义一个按钮。</p>
+            <p>写法：<code>&lt;button type="submit"&gt;提交&lt;/button&gt;</code></p>
+            <p>输出：<button type="submit">提交</button></p>  
+        </section>
+
+        <section>
+            <h3>select</h3>
+            <p><code>&lt;select&gt;</code></p>
+            <p>定义一个下拉列表。</p>
+            <p>写法：<code><br>&lt;select name="cars"&gt;<br>
+                &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                &lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+                &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+                &lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                &lt;/select&gt;</code></p>
+            <p>输出：<select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select></p>
+            
+        </section>
+
+        <section>
+            <h3>optgroup</h3>
+            <p><code>&lt;optgroup&gt;</code></p>
+            <p>定义一个选项组，用于组织<code>&lt;option&gt;</code>元素。</p>
+            <p>写法：
+                <code>
+                    <br>&lt;select&gt;<br>
+                    &lt;optgroup label="Swedish Cars"&gt;<br>
+                        &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                        &lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+                    &lt;/optgroup&gt;<br>
+                    &lt;optgroup label="German Cars"&gt;<br>
+                        &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+                        &lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                    &lt;/optgroup&gt;<br>
+                    &lt;/select&gt;<br>
+                </code>
+            </p>
+            <p>输出：<select>
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select></p>
+            
+        </section>
+
+        <section>
+            <h3>option</h3>
+            <p><code>&lt;option&gt;</code></p>
+            <p>定义一个下拉列表中的选项。</p>
+            <p>写法：
+                <code><br>
+                    &lt;select&gt;<br>
+                    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+                    &lt;option value="saab" selected&gt;Saab&lt;/option&gt;<br>
+                    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+                    &lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+                &lt;/select&gt;
+                </code>
+            </p>
+            <p>输出：
+                <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab" selected>Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </p>
+        </section>
+
+        <section>
+            <h3>fieldset</h3>
+            <p><code>&lt;fieldset&gt;</code></p>
+            <p>定义一组相关的表单元素，并使用外框包围它们。</p>
+            <p>写法：
+                <code><br>
+                    &lt;fieldset&gt;<br>
+                    &lt;legend&gt;个人信息&lt;/legend&gt;<br>
+                    &lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+                    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;<br>
+                    &lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+                    &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;<br>
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;<br>
+                &lt;/fieldset&gt;
+                </code>
+            </p>
+            <p>输出：
+                <fieldset>
+                    <legend>个人信息</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </fieldset>
+            </p>
+            
+        </section>
+
+        <section>
+            <h3>legend</h3>
+            <p><code>&lt;legend&gt;</code></p>
+            <p>定义<code>&lt;fieldset&gt;</code>元素的标题。</p>
+            <p>写法：
+                <code><br>
+                    &lt;fieldset&gt;<br>
+                    &lt;legend&gt;个人信息&lt;/legend&gt;<br>
+                    &lt;/fieldset&gt;<br>
+                </code>
+            </p>
+            <p>输出：
+                <fieldset>
+                    <legend>个人信息</legend>
+                </fieldset>
+            </p>
+            
+        </section>
+
+        <section>
+            <h3>&lt;output&gt;</h3>
+            <p><code>&lt;output&gt;</code></p>
+            <p>定义计算结果（例如输出的值）。</p>
+            <p>写法：</p>
+            <code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
+                &lt;input type="number" id="a" name="a" value="0"&gt; +<br>
+                &lt;input type="number" id="b" name="b" value="0"&gt; =<br>
+                &lt;output name="result" for="a b"&gt;0&lt;/output&gt;<br>
+            &lt;/form&gt;
+            </code>
+            <p>输出：</p>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number" id="a" name="a" value="0"> +
+                <input type="number" id="b" name="b" value="0"> =
+                <output name="result" for="a b">0</output>
+            </form>
+        </section>
+
+        <section>
+            <h3>datalist</h3>
+            <p><code>&lt;datalist&gt;</code></p>
+            <p>定义输入控件的预定义选项列表。</p>
+            <p>写法：
+                <code><br>
+                    &lt;input list="browsers"&gt;<br>
+                    &lt;datalist id="browsers"&gt;<br>
+                        &lt;option value="Internet Explorer"&gt;<br>
+                        &lt;option value="Firefox"&gt;<br>
+                        &lt;option value="Chrome"&gt;<br>
+                        &lt;option value="Opera"&gt;<br>
+                        &lt;option value="Safari"&gt;<br>
+                    &lt;/datalist&gt;
+                </code>
+            </p>
+            <p>输出：
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </p>
+        </section>
+
+    </section>
+</body>
+</html>

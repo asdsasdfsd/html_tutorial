@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>结构和语义</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>结构和语义</h1>
+
+    <h2>介绍</h2>
+    <p>其实都是相当于&lt;div&gt;，只是方便了搜索引擎搜索，低版本的浏览器有兼容问题。</p>
+    
+    <h2>结构相关标签</h2>
+
+    <section>
+        <h3>通用容器</h3>
+        <p>&lt;div&gt;</p>
+        <p>HTML 中的通用容器元素，用于组织页面结构，没有特定的语义。</p>
+    </section>
+
+    <section>
+        <h3>行内内容容器</h3>
+        <p>&lt;span&gt;</p>
+        <p>HTML 中的行内内容容器元素，用于标记或样式化文本中的一小部分内容。</p>
+    </section>
+
+    <section>
+        <h3>隐藏内容的容器</h3>
+        <p>&lt;template&gt;</p>
+        <p>定义隐藏客户端内容的容器。其内容在页面加载时应保持隐藏。</p>
+        <p>写法：&lt;template id="my-template"&gt;&lt;p&gt;这是一个模板内容。&lt;/p&gt;&lt;/template&gt;</p>
+        <p>输出：</p>
+        <template id="my-template">
+            <p>这是一个模板内容。</p>
+        </template>
+    </section>
+
+    <section>
+        <h3>机器可读数据</h3>
+        <p>&lt;data&gt;</p>
+        <p>定义一个包含机器可读的数据的元素。与时间是日期相关用&lt;time&gt;</p>
+    </section>
+
+    <section>
+        <h3>时间</h3>
+        <p>&lt;time&gt;</p>
+        <p>定义日期或时间。</p>
+        <p>写法：&lt;time datetime="2023-10-03"&gt;2023年10月3日&lt;/time&gt;</p>
+        <p>输出：<time datetime="2023-10-03">2023年10月3日</time></p>
+    </section>
+
+    <hr>
+    <h2>语义相关标签</h2>
+    <section>
+        <h3>页面的主要内容</h3>
+        <p>&lt;main&gt;</p>
+        <p>定义页面的主要内容区域，通常不包括页眉、页脚和侧边栏。一般只有一个。</p>
+    </section>
+
+    <section>
+        <h3>页眉</h3>
+        <p>&lt;header&gt;</p>
+        <p>定义页面或者某个区段的页眉。</p>
+    </section>
+
+    <section>
+        <h3>侧边栏或补充内容</h3>
+        <p>&lt;aside&gt;</p>
+        <p>定义页面内容之外的内容，比如侧边栏或者与主内容无关的补充内容。</p>
+    </section>
+
+    <section>
+        <h3>导航栏</h3>
+        <p>&lt;nav&gt;</p>
+        <p>定义页面的导航部分，通常包含链接到其他页面或当前页面不同部分的链接。</p>
+    </section>
+
+    <section>
+        <h3>页脚</h3>
+        <p>&lt;footer&gt;</p>
+        <p>定义页面或者某个区段的页脚。</p>
+    </section>
+
+    <section>
+        <h3>搜索框</h3>
+        <p>&lt;search&gt;</p>
+        <p>HTML5 中的实验性标签，表示一个搜索框。</p>
+    </section>
+
+    <section>
+        <h3>区段</h3>
+        <p>&lt;section&gt;</p>
+        <p>定义文档中的一个区域（section），比如章节、页眉、页脚或文档的其他部分。</p>
+    </section>
+
+    <section>
+        <h3>独立的内容单元</h3>
+        <p>&lt;article&gt;</p>
+        <p>定义页面中独立的、完整的内容单元，比如博客文章、新闻文章等。</p>
+    </section>
+
+    <section>
+        <h3>可见标题</h3>
+        <p>&lt;summary&gt;</p>
+        <p>用于定义&lt;details&gt;元素的可见标题。</p>
+    </section>
+
+    <section>
+        <h3>可折叠部件</h3>
+        <p>&lt;details&gt;</p>
+        <p>用于创建一个可折叠的部件，用户可以点击标题来打开或关闭内容。</p>
+    </section>
+
+    <section>
+        <h3>对话框或交互性窗口</h3>
+        <p>&lt;dialog&gt;</p>
+        <p>定义一个对话框或者交互性窗口，通常用于显示信息。</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>加入特殊格式</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>特殊格式</h1>
+    <p>除了&lt;blockquote&gt;和&lt;q&gt;以为其他的都可以用&lt;p&gt;+CSS来实现，<br>都可以当作格式分离符,或者统一格式的标签</p>
+    <h2>字体格式</h2>
+    
+    <section>
+        <h3>加粗字体</h3>
+        <p>&lt;b&gt;</p>
+        <p>定义粗体文本。</p>
+        <p>写法：&lt;b&gt;这是一个粗体文本。&lt;/b&gt;</p>
+        <p>输出：<b>这是一个粗体文本。</b></p>
+        <p>&lt;strong&gt;</p>
+        <p>定义重要的粗体文本，具有语义上的强调。</p>
+        <p>写法：&lt;strong&gt;这是一个重要的粗体文本。&lt;/strong&gt;</p>
+        <p>输出：<strong>这是一个重要的粗体文本。</strong></p>
+    </section>
+    
+    <section>
+        <h3>定义斜体</h3>
+        <p>&lt;i&gt;</p>
+        <p>定义斜体文本。</p>
+        <p>写法：&lt;i&gt;这是一个斜体文本。&lt;/i&gt;</p>
+        <p>输出：<i>这是一个斜体文本。</i></p>
+        <p>&lt;em&gt;</p>
+        <p>定义强调的斜体文本，具有语义上的强调。</p>
+        <p>写法：&lt;em&gt;这是一个强调的斜体文本。&lt;/em&gt;</p>
+        <p>输出：<em>这是一个强调的斜体文本。</em></p>
+    </section>
+    
+    <section>
+        <h3>标记文本</h3>
+        <p>&lt;mark&gt;</p>
+        <p>定义被标记或高亮显示的文本。</p>
+        <p>写法：&lt;mark&gt;这是一个被标记的文本。&lt;/mark&gt;</p>
+        <p>输出：<mark>这是一个被标记的文本。</mark></p>
+    </section>
+    
+    <section>
+        <h3>定义下标文本</h3>
+        <p>&lt;sub&gt;</p>
+        <p>定义下标文本。</p>
+        <p>写法：H&lt;sub&gt;2&lt;/sub&gt;O 是水的化学式。</p>
+        <p>输出：H<sub>2</sub>O 是水的化学式。</p>
+    </section>
+    
+    <section>
+        <h3>定义上标文本</h3>
+        <p>&lt;sup&gt;</p>
+        <p>定义上标文本。</p>
+        <p>写法：E = mc&lt;sup&gt;2&lt;/sup&gt; 是爱因斯坦的质能方程。</p>
+        <p>输出：E = mc<sup>2</sup> 是爱因斯坦的质能方程。</p>
+    </section>
+    
+    <section>
+        <h3>定义小号字体</h3>
+        <p>&lt;small&gt;</p>
+        <p>定义比常规文本小一号的文本。</p>
+        <p>写法：&lt;small&gt;这是一个小号字体文本。&lt;/small&gt;</p>
+        <p>输出：<small>这是一个小号字体文本。</small></p>
+    </section>
+
+    <section>
+        <h3>bdi</h3>
+        <p>&lt;bdi&gt;</p>
+        <p>定义文字方向独立的文本。方便从右往左写的文字</p>
+        <p>写法：&lt;bdi&gt;مرحبا بالعالم&lt;/bdi&gt;</p>
+        <p>输出：<bdi>مرحبا بالعالم</bdi></p>
+    </section>
+    
+    <section>
+        <h3>bdo</h3>
+        <p>&lt;bdo&gt;</p>
+        <p>定义覆盖默认文本方向的文本。</p>
+        <p>写法：&lt;bdo dir="rtl"&gt;Hello World&lt;/bdo&gt;</p>
+        <p>输出：<bdo dir="rtl">Hello World</bdo></p>
+    </section>
+    
+    <section>
+        <h3>定义下划线</h3>
+        <p>&lt;u&gt;</p>
+        <p>定义带有下划线的文本。</p>
+        <p>写法：&lt;u&gt;这是一个带有下划线的文本。&lt;/u&gt;</p>
+        <p><u>这是一个带有下划线的文本。</u></p>
+        <p>&lt;ins&gt;</p>
+        <p>定义插入的文本，通常显示为带有下划线的文本。</p>
+        <p>写法：&lt;ins&gt;这是一个插入的文本。&lt;/ins&gt;</p>
+        <p>输出：<ins>这是一个插入的文本。</ins></p>
+        <p>专有属性</p>
+        <p>key：cite</p>
+        <p>value：URL</p>
+        <p>介绍：指定插入文本的来源URL。</p>
+        <p>key：datetime</p>
+        <p>value：日期时间</p>
+        <p>介绍：指定插入操作的日期和时间。</p>
+    </section>
+    
+    <section>
+        <h3>定义删除线</h3>
+        <p>&lt;del&gt;</p>
+        <p>定义被删除的文本，通常显示为带有删除线的文本。</p>
+        <p>写法：&lt;del&gt;这是一个被删除的文本。&lt;/del&gt;</p>
+        <p>输出：<del>这是一个被删除的文本。</del></p>
+        <p>专有属性</p>
+        <p>key：cite</p>
+        <p>value：URL</p>
+        <p>介绍：指定被删除文本的来源URL。</p>
+        <p>key：datetime</p>
+        <p>value：日期时间</p>
+        <p>介绍：指定删除操作的日期和时间。</p>
+    </section>
+    
+    <h2>文档相关</h2>
+    
+    <section>
+        <h3>引用</h3>
+        <p>&lt;cite&gt;</p>
+        <p>定义作品的引用或参考。</p>
+        <p>写法：&lt;cite&gt;《哈利·波特》&lt;/cite&gt; 是一本非常受欢迎的书。</p>
+        <p>输出：<cite>《哈利·波特》</cite> 是一本非常受欢迎的书。</p>
+    </section>
+    
+    <section>
+        <h3>地址</h3>
+        <p>&lt;address&gt;</p>
+        <p>定义文档作者或拥有者的联系信息。</p>
+        <p>写法：&lt;address&gt;联系信息：1234 街道名, 城市, 国家&lt;/address&gt;</p>
+        <p>输出：<address>联系信息：1234 街道名, 城市, 国家</address></p>
+    </section>
+    
+    <section>
+        <h3>缩写</h3>
+        <p>&lt;abbr&gt;</p>
+        <p>定义缩写或首字母缩略词。</p>
+        <p>写法：&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; 是一种标记语言。</p>
+        <p>输出：<abbr title="HyperText Markup Language">HTML</abbr> 是一种标记语言。</p>
+    </section>
+    
+    <section>
+        <h3>定义术语</h3>
+        <p>&lt;dfn&gt;</p>
+        <p>定义一个术语。</p>
+        <p>写法：&lt;dfn&gt;HTML&lt;/dfn&gt; 是一种用于创建网页的语言。</p>
+        <p>输出：<dfn>HTML</dfn> 是一种用于创建网页的语言。</p>
+    </section>
+    
+    <section>
+        <h3>块引用</h3>
+        <p>&lt;blockquote&gt;</p>
+        <p>定义长的块引用。</p>
+        <p>写法：&lt;blockquote&gt;这是一个块引用的示例。&lt;/blockquote&gt;</p>
+        <p>输出：<blockquote>这是一个块引用的示例。</blockquote></p>
+        <p>专有属性</p>
+        <p>key：cite</p>
+        <p>value：URL</p>
+        <p>介绍：指定引用的来源URL。</p>
+    </section>
+    
+    <section>
+        <h3>短引用</h3>
+        <p>&lt;q&gt;</p>
+        <p>定义短的引用。</p>
+        <p>写法：&lt;q&gt;这是一个短引用的示例。&lt;/q&gt;</p>
+        <p>输出：<q>这是一个短引用的示例。</q></p>
+        <p>专有属性</p>
+        <p>key：cite</p>
+        <p>value：URL</p>
+        <p>介绍：指定引用的来源URL。</p>
+    </section>
+    
+    <h2>ruby相关</h2>
+    
+    <section>
+        <h3>ruby</h3>
+        <p>&lt;ruby&gt;</p>
+        <p>定义ruby注释。</p>
+        <p>写法：&lt;ruby&gt;汉&lt;rt&gt;hàn&lt;/rt&gt;&lt;/ruby&gt;</p>
+        <p>输出：<ruby>汉<rt>hàn</rt></ruby></p>
+    </section>
+    
+    <section>
+        <h3>ruby注释</h3>
+        <p>&lt;rp&gt;</p>
+        <p>定义不支持ruby元素的浏览器显示的注释内容。</p>
+        <p>写法：&lt;ruby&gt;汉&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;hàn&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</p>
+        <p>输出：<ruby>汉<rp>(</rp><rt>hàn</rt><rp>)</rp></ruby></p>
+    </section>
+    
+    <section>
+        <h3>ruby文本</h3>
+        <p>&lt;rt&gt;</p>
+        <p>定义ruby注释的文本。</p>
+        <p>写法：&lt;ruby&gt;汉&lt;rt&gt;hàn&lt;/rt&gt;&lt;/ruby&gt;</p>
+        <p>输出：<ruby>汉<rt>hàn</rt></ruby></p>
+    </section>
+    
+    <h2>预格式化文本</h2>
+    
+    <section>
+        <h3>预格式化</h3>
+        <p>&lt;pre&gt;</p>
+        <p>定义预格式化文本，保留空格和换行符。</p>
+        <p>写法：&lt;pre&gt;
+这是一个预格式化文本。
+    它保留了空格和换行符。
+&lt;/pre&gt;</p>
+        <p>输出：</p>
+        <pre>
+这是一个预格式化文本。
+    它保留了空格和换行符。
+</pre>
+    </section>
+    
+    <section>
+        <h3>代码</h3>
+        <p>&lt;code&gt;</p>
+        <p>定义计算机代码。</p>
+        <p>写法：&lt;code&gt;print(&quot;Hello, World!&quot;)&lt;/code&gt;</p>
+        <p>输出：<code>print("Hello, World!")</code></p>
+    </section>
+    
+    <section>
+        <h3>键盘输入</h3>
+        <p>&lt;kbd&gt;</p>
+        <p>定义键盘输入。</p>
+        <p>写法：&lt;kbd&gt;Ctrl + C&lt;/kbd&gt; 是复制的快捷键。</p>
+        <p>输出：<kbd>Ctrl + C</kbd> 是复制的快捷键。</p>
+    </section>
+    
+    <section>
+        <h3>示例输出</h3>
+        <p>&lt;samp&gt;</p>
+        <p>定义计算机程序的示例输出。</p>
+        <p>写法：&lt;samp&gt;示例输出文本。&lt;/samp&gt;</p>
+        <p>输出：<samp>示例输出文本。</samp></p>
+    </section>
+    
+    <section>
+        <h3>变量</h3>
+        <p>&lt;var&gt;</p>
+        <p>定义变量。</p>
+        <p>写法：&lt;var&gt;变量名&lt;/var&gt; = 变量值;</p>
+        <p>输出：<var>变量名</var> = 变量值;</p>
+    </section>
+</body>
+</html>

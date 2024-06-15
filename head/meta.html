@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>meta简介</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>meta简介</h1>
+
+    <h2>介绍</h2>
+    <p>对当前界面进行定义和设置</p>
+
+    <h2>属性</h2>
+    <p>key：charset</p>
+    <p>value：character_set</p>
+    <p>介绍：定义当前界面的字符集</p>
+    <br>
+    <p>key：name</p>
+    <p>value：可选 application-name|author|description|generator|keywords|viewport|robots|version</p>
+    <p>介绍：定义当前界面的属性</p>
+    <br>
+    <p>key：http-equiv</p>
+    <p>value：可选 content-security-policy|default-style|refresh|cache-control|content-language|expires|content-type</p>
+    <p>介绍：定义当前界面的设置</p>
+    <br>
+    <p>key：content</p>
+    <p>value：text</p>
+    <p>介绍：和http-equiv&name配合使用</p>
+
+    <h2>语法</h2>
+    <p>&lt;meta charset=""&gt;</p>
+    <p>&lt;meta name="" contents=""&gt;</p>
+    <p>&lt;meta http-equiv="" content=""&gt;</p>
+
+    <h2>常用语句</h2>
+    <h3>定义当前网页的字符集</h3>
+    <p>&lt;meta charset="UTF-8"&gt;</p>
+    <p>当前文档使用UTF-8字符集</p>
+    <h3>定义当前网页的视口</h3>
+    <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+    <p>在所有的设备上控制界面的初始视口大小=设备宽度，缩放比例为1：1</p>
+    <h3>定义当前网页的文档描述</h3>
+    <p>&lt;meta name="description" content="描述内容"&gt;</p>
+    <p>提供页面的简短描述，用于搜索引擎结果中的描述内容，有助于提高SEO</p>
+    <h3>定义当前网页的关键词</h3>
+    <p>&lt;meta name-"keywords" content="关键词1，关键词2，..."&gt;</p>
+    <p>定义页面的关键词，帮助搜索引擎了解界面主题</p>
+    <h3>定义当前网页的作者</h3>
+    <p>&lt;meta name="author" contents="作者名"&gt;</p>
+    <p>指定页面的作者</p>
+    <h3>定义当前网页的robots行为</h3>
+    <p>&lt;meta name="robots" content="noindex, nofollow"&gt;</p>
+    <p>控制搜索引擎爬虫的行为，指定页面不被索引，不被跟踪</p>
+    <p>noindex：该页面不应该出现在搜索引擎的搜索结果中 nofollow：其他页面链接到这个页面，搜索引擎也不会通过这些链接来发现并索引页面中链接指向的内容。这个指令主要影响到页面中的链接传递权重的行为，而不是页面本身的索引状态。</p>
+    <h3>定义当前网页的版本</h3>
+    <p>&lt;meta name="version" content="1.0"&gt;</p>
+    <p>定义当前网页文档的版本信息</p>
+    <h3>设置刷新界面对应的行为</h3>
+    <p>&lt;meta http-equiv="refresh" content="5;url=https://example.com&gt;</p>
+    <p>5秒后自动刷新界面并跳转到指定URL，0表示不刷新</p>
+    <h3>设置页面缓冲控制</h3>
+    <p>&lt;meta http-equiv="cache-control" content="no-cache"&gt;</p>
+    <p>控制浏览器如何缓存页面内容，上面是浏览器不应该缓存该页面的内容</p>
+    <p>其他的缓存控制策略，如 no-store（完全不缓存）、max-age（指定缓存时间）、must-revalidate（必须重新验证缓存的有效性）等</p>
+    <h3>设置页面使用的语言</h3>
+    <p>&lt;meta http-equiv="content-language" content="en"&gt;</p>
+    <p>指定页面的主要语言是English</p>
+    <h3>设置页面过期时间</h3>
+    <p>&lt;meta http-equiv="expires" content="Wed, 21 Oct 2026 07:28:00 GMT"&gt;</p>
+    <p>指定页面的过期时间是 2026 年 10 月 21 日 上午 07:28:00 GMT。</p>
+    <h3>设置页面的文档字符集（HTML5不用）</h3>
+    <p>&ltmeta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p>
+    <p>指定文档的MIME类型和字符集</p>
+</body>
+</html>

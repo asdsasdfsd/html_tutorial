@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>link介绍</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>link介绍</h1>
+    <h2>介绍</h2>
+    <p>用于为当前界面预加载资源</p>
+    <h2>属性</h2>
+    <p>key：rel</p>
+    <p>value：可选icon| stylesheet| search| author| license| help| alternate| next| prev| pingback| dns-prefetch| preconnect| prerender| prefetch| preload</p>
+    <p>介绍：指定当前文档与所链接资源之间的关系</p>
+    <br>
+    <p>key：href</p>
+    <p>value：url</p>
+    <p>介绍：链接文档的地址</p>
+    <br>
+    <p>key：type</p>
+    <p>value：MIME类型</p>
+    <p>介绍：指定所链接资源的 MIME 类型。通常用于样式表，值为 "text/css"。</p>
+    <br>
+    <p>key：media</p>
+    <p>value：媒体查询</p>
+    <p>介绍：指定样式表应用的媒体类型或设备，例如 "screen"、"print"、"all"、或特定条件的媒体查询。</p>
+    <br>
+    <p>key：referrerpolicy</p>
+    <p>value：no-referrer | no-referrer-when-downgrade | origin | origin-when-cross-origin | same-origin | strict-origin | strict-origin-when-cross-origin | unsafe-url</p>
+    <p>介绍：设置当请求链接资源时，Referer 头的策略。</p>
+    <br>
+    <p>key：crossorigin</p>
+    <p>value：anonymous | use-credentials</p>
+    <p>介绍：指定如何处理跨域请求。`anonymous` 表示不发送用户凭据，`use-credentials` 表示发送用户凭据。</p>
+    <br>
+    <p>key：hreflang</p>
+    <p>value：语言代码</p>
+    <p>介绍：指定所链接文档的语言，通常用于多语言站点。</p>
+    <br>
+    <p>key：sizes</p>
+    <p>value：图标尺寸</p>
+    <p>介绍：仅在 rel="icon" 或 rel="apple-touch-icon" 时使用，定义图标的大小，如 "16x16"、"32x32"。</p>
+    <h2>语法</h2>
+    <p>&lt;link rel="stylesheet" href="styles.css" type="text/css" media="screen" referrerpolicy="no-referrer" crossorigin="anonymous" hreflang="en" sizes="16x16"&gt;</p>
+</body>
+</html>
