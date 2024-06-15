@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea专用属性</title>
+</head>
+<body>
+    <h1>Textarea专用属性</h1>
+
+    <section>
+        <h2>name</h2>
+        <p>类型：text</p>
+        <p>描述：名字</p>
+        <p>写法：&lt;textarea name="description"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea name="description"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>cols</h2>
+        <p>类型：number</p>
+        <p>描述：文本框的宽度</p>
+        <p>写法：&lt;textarea cols="30"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea cols="30"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>rows</h2>
+        <p>类型：number</p>
+        <p>描述：文本框的高度</p>
+        <p>写法：&lt;textarea rows="10"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea rows="10"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>maxlength</h2>
+        <p>类型：number</p>
+        <p>描述：文本框的最大字母数量</p>
+        <p>写法：&lt;textarea maxlength="100"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea maxlength="100"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>form</h2>
+        <p>类型：form_id</p>
+        <p>描述：对应的表单id</p>
+        <p>写法：&lt;form id="myform"&gt;&lt;/form&gt;&lt;textarea form="myform"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <form id="myform"></form>
+        <textarea form="myform"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>autofocus</h2>
+        <p>类型：autofocus</p>
+        <p>描述：当页面加载的时候，自动获得聚焦</p>
+        <p>写法：&lt;textarea autofocus&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea autofocus></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>dirname</h2>
+        <p>类型：textareaname.dir</p>
+        <p>描述：文本方向</p>
+        <p>写法：&lt;textarea name="description" dirname="description.dir" dir="rtl"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea name="description" dirname="description.dir" dir="rtl"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>readonly</h2>
+        <p>类型：readonly</p>
+        <p>描述：只读</p>
+        <p>写法：&lt;textarea readonly&gt;这是预先填充的只读内容&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea readonly>这是预先填充的只读内容</textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>disabled</h2>
+        <p>类型：disabled</p>
+        <p>描述：禁用文本框，禁用的 &lt;textarea&gt; 会变得灰暗</p>
+        <p>写法：&lt;textarea disabled&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea disabled></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>required</h2>
+        <p>类型：required</p>
+        <p>描述：必填</p>
+        <p>写法：&lt;textarea required&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea required></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>placeholder</h2>
+        <p>类型：text</p>
+        <p>描述：占位符，通常用来描述需要信息</p>
+        <p>写法：&lt;textarea placeholder="请输入描述"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <textarea placeholder="请输入描述"></textarea>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>wrap</h2>
+        <p>类型：可选</p>
+        <p>描述：是否保留换行符 soft | hard</p>
+        <p>写法：&lt;textarea wrap="soft"&gt;&lt;/textarea&gt; 或 &lt;textarea wrap="hard"&gt;&lt;/textarea&gt;</p>
+        <p>输出：</p>
+        <p>软换行：</p>
+        <textarea wrap="soft"></textarea>
+        <p>硬换行：</p>
+        <textarea wrap="hard"></textarea>
+    </section>
+
+</body>
+</html>

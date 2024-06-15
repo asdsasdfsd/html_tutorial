@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form专有属性</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>form专有属性</h1>
+    <h2>关键属性</h2>
+    <p>Key：action</p>
+    <p>Value：URL</p>
+    <p>介绍：指定将表单数据提交到的服务器端脚本的 URL。</p>
+
+    <br>
+
+    <p>Key：method</p>
+    <p>Value：get | post</p>
+    <p>介绍：指定发送表单数据时要使用的 HTTP 方法。常见的值为 get 和 post。</p>
+    
+    <h2>可选属性：</h2>
+    
+    <p>Key：autocomplete</p>
+    <p>Value：on | off</p>
+    <p>介绍：指定是否启用表单的自动完成功能。on 表示启用，off 表示禁用。</p>
+
+    <br>
+    
+    <p>Key：enctype</p>
+    <p>Value：application/x-www-form-urlencoded | multipart/form-data | text/plain</p>
+    <p>介绍：指定在提交表单数据时应如何对表单数据进行编码。仅在 method 为 post 时有效。</p>
+
+    <br>
+    
+    <p>Key：name</p>
+    <p>Value：文本</p>
+    <p>介绍：指定表单的名称，用于标识表单以及在提交表单时作为数据的一部分。</p>
+
+    <br>
+    
+    <p>Key：novalidate</p>
+    <p>Value：novalidate</p>
+    <p>介绍：指定表单在提交时是否应进行浏览器默认验证。当设置为 novalidate 时，浏览器将不会验证表单数据。</p>
+
+    <br>
+    
+    <p>Key：target</p>
+    <p>Value：_blank | _self | _parent |  _top</p>
+    <p>介绍：指定在提交表单后接收到的响应应该在何处显示。常见的值有 _blank（在新窗口打开）、_self（在当前窗口打开）、_parent（在父框架中打开）和 _top（在顶层框架中打开）。</p>
+
+    <br>
+    
+    <p>Key：accept-charset</p>
+    <p>Value：字符集</p>
+    <p>介绍：指定在提交表单数据时接受的字符集。<b>该属性已经被废弃</b>，推荐在服务器端设置字符集。</p>
+</body>
+</html>

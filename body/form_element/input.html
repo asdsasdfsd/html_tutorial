@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input专有属性</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Input专有属性</h1>
+    
+    <h2>必要属性</h2>
+    <section>
+        <p>Key：type</p>
+        <p>Value：submit | image  | reset | text | button | checkbox | radio | number | password | range | date | datetime-local | 
+            month | week | time | hidden | color | file | search | email | tel | url 
+        </p>
+        <p>介绍：定义输入字段的类型。<a href="/body/form_element/input_type.html">类型展示</a></p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：name</p>
+        <p>Value：username</p>
+        <p>介绍：指定输入字段在表单中的名称，用于标识输入数据。</p>
+    </section>
+
+    <br>
+    
+    <h2>可选属性</h2>
+    <section>
+        <p>Key：form</p>
+        <p>Value：form_id</p>
+        <p>介绍：指定 `&lt;input&gt;` 元素所属的表单，使用表单的 id 属性值。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：autocomplete</p>
+        <p>Value：on | off</p>
+        <p>介绍：允许浏览器自动填充输入字段的值。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：autofocus</p>
+        <p>Value：无</p>
+        <p>介绍：页面加载时，自动将焦点设置在输入字段上。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：disabled</p>
+        <p>Value：无</p>
+        <p>介绍：禁用输入字段，使其不可编辑或提交。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：formnovalidate</p>
+        <p>Value：无</p>
+        <p>介绍：在提交表单时忽略输入字段的验证。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：dirname</p>
+        <p>Value：inputname.dir</p>
+        <p>写法：&lt;input type="text" id="username" name="username" dirname="username.dir" dir="rtl"&gt;</p>
+        <p>输出：</p>
+        <input type="text" id="username" name="username" dirname="username.dir" dir="rtl">
+        <p>介绍：在提交表单时，提交1. username: "输入" 2.username.dir: "ltr" 或 "rtl" </p>
+    </section>
+
+    <br>
+
+    <h2>验证相关</h2>
+    <section>
+        <p>Key：size</p>
+        <p>Value：number</p>
+        <p>介绍：指定输入字段的可见字符数。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：maxlength</p>
+        <p>Value：number</p>
+        <p>介绍：指定输入字段允许的最大字符数。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：minlength</p>
+        <p>Value：number</p>
+        <p>介绍：指定输入字段允许的最小字符数。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：multiple</p>
+        <p>Value：无</p>
+        <p>介绍：允许多个值，适用于 `&lt;input type="file"&gt;`。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：pattern</p>
+        <p>Value：[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}</p>
+        <p>介绍：指定输入字段的正则表达式模式，用于验证输入</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：placeholder</p>
+        <p>Value：占位的字符</p>
+        <p>介绍：在输入前显示的文本提示。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：readonly</p>
+        <p>Value：无</p>
+        <p>介绍：指定输入字段为只读，用户无法编辑但可提交。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：required</p>
+        <p>Value：无</p>
+        <p>介绍：指定输入字段为必填项。</p>
+    </section>
+
+    <br>
+    
+    <h2>限制于特定 type 的属性</h2>
+
+    <h3>type="file"</h3>
+    <section>
+        <p>Key：accept</p>
+        <p>Value：file_extension | audio/* | video/* | image/* | media_type </p>
+        <p>介绍：指定允许上传的文件类型。</p>
+    </section>
+
+    <br>
+
+    <h3>type="number" 或日期类</h3>
+    <section>
+        <p>Key：step</p>
+        <p>Value：number | any</p>
+        <p>介绍：指定数字或日期的递增或递减步长。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：min</p>
+        <p>Value：number</p>
+        <p>介绍：指定输入字段允许的最小值。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：max</p>
+        <p>Value：number</p>
+        <p>介绍：指定输入字段允许的最大值。</p>
+    </section>
+
+    <br>
+
+    <h3>type="checkbox" 或 `radio`</h3>
+    <section>
+        <p>Key：checked</p>
+        <p>Value：无</p>
+        <p>介绍：指定输入字段是否初始选中。</p>
+    </section>
+
+    <br>
+
+    <h3>type="submit" 或 `image`</h3>
+    <section>
+        <p>Key：formaction</p>
+        <p>Value：submit.php</p>
+        <p>介绍：指定提交表单时的 URL。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：formenctype</p>
+        <p>Value：application/x-www-form-urlencoded | multipart/form-data | text/plain</p>
+        <p>介绍：指定在提交表单数据时如何编码。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：formmethod</p>
+        <p>Value：post | get</p>
+        <p>介绍：指定用于提交表单数据的 HTTP 方法。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：formtarget</p>
+        <p>Value：_blank | _self | _parent | _top | framename</p>
+        <p>介绍：指定在哪个窗口或框架中显示提交的响应。</p>
+    </section>
+
+    <br>
+
+    <h3>type="image"</h3>
+    <section>
+        <p>Key：alt</p>
+        <p>Value：Submit</p>
+        <p>介绍：指定图像输入字段的替代文本。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：src</p>
+        <p>Value：submit.png</p>
+        <p>介绍：指定图像的 URL。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：height</p>
+        <p>Value：40</p>
+        <p>介绍：指定图像的高度。</p>
+    </section>
+
+    <br>
+        
+    <section>
+        <p>Key：width</p>
+        <p>Value：120</p>
+        <p>介绍：指定图像的宽度。</p>
+    </section>
+
+    <br>
+
+    <h3>type="button"</h3>
+    <section>
+        <p>Key：popovertarget</p>
+        <p>Value：element_id</p>
+        <p>介绍：</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <p>Key：popovertargetaction</p>
+        <p>Value：hide | show | toggle</p>
+        <p>介绍：</p>
+    </section>
+
+</body>
+</html>

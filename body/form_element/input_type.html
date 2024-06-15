@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input类型展示</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Input类型展示</h1>
+    
+    <br>
+    
+    <section>
+        <h2>type="image"</h2>
+        <p>写法：&lt;input type="image" src="submit.png" alt="Submit"&gt;</p>
+        <p>输出：<input type="image" src="submit.png" alt="Submit"></p>
+        <p>介绍：类似于提交按钮，但使用图像作为按钮的外观。</p>
+    </section>
+        
+    <br>
+    
+    <section>
+        <h2>type="submit"</h2>
+        <p>写法：&lt;input type="submit" value="提交"&gt;</p>
+        <p>输出：<input type="submit" value="提交"></p>
+        <p>介绍：用于提交表单。</p>
+    </section>
+    
+    <br>
+    
+    <section>
+        <h2>type="reset"</h2>
+        <p>写法：&lt;input type="reset" value="重置"&gt;</p>
+        <p>输出：<input type="reset" value="重置"></p>
+        <p>介绍：重置表单中所有字段为初始值。</p>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>type="text"</h2>
+        <p>写法：&lt;input type="text" id="username" name="username"&gt;</p>
+        <p>输出：<input type="text" id="username" name="username"></p>
+        <p>介绍：用于接收单行文本输入，例如用户名或简短文本。</p>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>type="button"</h2>
+        <p>写法：&lt;input type="button" id="button" name="button" value="Click me"&gt;</p>
+        <p>输出：<input type="button" id="button" name="button" value="Click me"></p>
+        <p>介绍：一个普通的按钮，点击时执行自定义的 JavaScript 功能，不会提交表单。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="checkbox"</h2>
+        <p>写法：</p>
+        <p>&lt;input type="checkbox" id="color-red" name="color" value="red"&gt;</p>
+        <p>&lt;label for="color-red"&gt;红色&lt;/label&gt;</p>
+        
+        <p>&lt;input type="checkbox" id="color-blue" name="color" value="blue"&gt;</p>
+        <p>&lt;label for="color-blue"&gt;蓝色&lt;/label&gt;</p>
+        
+        <p>&lt;input type="checkbox" id="color-green" name="color" value="green"&gt;</p>
+        <p>&lt;label for="color-green"&gt;绿色&lt;/label&gt;</p>
+        
+        <p>输出：</p>
+        <input type="checkbox" id="color-red" name="color" value="red">
+        <label for="color-red">红色</label><br>
+        
+        <input type="checkbox" id="color-blue" name="color" value="blue">
+        <label for="color-blue">蓝色</label><br>
+        
+        <input type="checkbox" id="color-green" name="color" value="green">
+        <label for="color-green">绿色</label><br>
+        <p>介绍：允许用户选择多个选项，通常在复选框组中使用。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="radio"</h2>
+        <p>写法：</p>
+        <p>男性：&lt;input type="radio" id="male" name="gender" value="male"&gt;</p>
+        <p>女性：&lt;input type="radio" id="female" name="gender" value="female"&gt;</p>
+        <p>输出：<br>
+            男性：<input type="radio" id="male" name="gender" value="male"><br>
+            女性：<input type="radio" id="female" name="gender" value="female">
+        </p>
+        <p>介绍：允许用户从多个选项中选择一个，通常在单选框组中使用。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="number"</h2>
+        <p>写法：&lt;input type="number" id="quantity" name="quantity" min="1" max="10"&gt;</p>
+        <p>输出：<input type="number" id="quantity" name="quantity" min="1" max="10"></p>
+        <p>介绍：接收数值输入，通常用于数量或评分等场景。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="password"</h2>
+        <p>写法：&lt;input type="password" id="password" name="password"&gt;</p>
+        <p>输出：<input type="password" id="password" name="password"></p>
+        <p>介绍：用于接收密码输入，输入内容会被隐藏。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="range"</h2>
+        <p>写法：&lt;input type="range" id="volume" name="volume" min="0" max="100"&gt;</p>
+        <p>输出：<input type="range" id="volume" name="volume" min="0" max="100"></p>
+        <p>介绍：用于通过滑块选择一个范围内的数值。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="date"</h2>
+        <p>写法：&lt;input type="date" id="birthday" name="birthday"&gt;</p>
+        <p>输出：<input type="date" id="birthday" name="birthday"></p>
+        <p>介绍：接收日期输入，用户可以选择一个特定的日期。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="datetime-local"</h2>
+        <p>写法：&lt;input type="datetime-local" id="meeting-time" name="meeting-time"&gt;</p>
+        <p>输出：<input type="datetime-local" id="meeting-time" name="meeting-time"></p>
+        <p>介绍：接收日期和时间输入，用户可以选择特定的日期和时间。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="month"</h2>
+        <p>写法：&lt;input type="month" id="month" name="month"&gt;</p>
+        <p>输出：<input type="month" id="month" name="month"></p>
+        <p>介绍：接收年份和月份输入，用户可以选择一个特定的月份。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="week"</h2>
+        <p>写法：&lt;input type="week" id="week" name="week"&gt;</p>
+        <p>输出：<input type="week" id="week" name="week"></p>
+        <p>介绍：接收年份和周数输入，用户可以选择一个特定的周。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="time"</h2>
+        <p>写法：&lt;input type="time" id="time" name="time"&gt;</p>
+        <p>输出：<input type="time" id="time" name="time"></p>
+        <p>介绍：接收时间输入，用户可以选择一个特定的时间。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="hidden"</h2>
+        <p>写法：&lt;input type="hidden" id="secret" name="secret" value="hidden-value"&gt;</p>
+        <p>输出：(无显示)</p>
+        <p>介绍：隐藏字段，用户看不见但会随表单提交到服务器。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="color"</h2>
+        <p>写法：&lt;input type="color" id="favcolor" name="favcolor"&gt;</p>
+        <p>输出：<input type="color" id="favcolor" name="favcolor"></p>
+        <p>介绍：允许用户选择颜色。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="file"</h2>
+        <p>写法：&lt;input type="file" id="myfile" name="myfile"&gt;</p>
+        <p>输出：<input type="file" id="myfile" name="myfile"></p>
+        <p>介绍：用于上传文件，用户可以选择本地文件。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="search"</h2>
+        <p>写法：&lt;input type="search" id="search" name="search" placeholder="Search...">&lt;/input&gt;</p>
+        <p>输出：<input type="search" id="search" name="search" placeholder="Search..."></p>
+        <p>介绍：用于搜索输入，回车或者点击表单提交后会提交给服务器。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="email"</h2>
+        <p>写法：&lt;input type="email" id="email" name="email" placeholder="example@example.com"&gt;</p>
+        <p>输出：<input type="email" id="email" name="email" placeholder="example@example.com"></p>
+        <p>介绍：接收电子邮件地址输入，可以确保用户输入的格式符合电子邮件地址的规范。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="tel"</h2>
+        <p>写法：&lt;input type="tel" id="phone" name="phone" placeholder="123-456-7890"&gt;</p>
+        <p>输出：<input type="tel" id="phone" name="phone" placeholder="123-456-7890"></p>
+        <p>介绍：接收电话号码输入，适合用于输入格式固定的电话号码。</p>
+    </section>
+
+    <br>
+    
+    <section>
+        <h2>type="url"</h2>
+        <p>写法：&lt;input type="url" id="website" name="website" placeholder="https://www.example.com"&gt;</p>
+        <p>输出：<input type="url" id="website" name="website" placeholder="https://www.example.com"></p>
+        <p>介绍：接收网址输入，可以确保用户输入的格式符合网址的规范。</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button 专用属性展示</title>
+</head>
+<body>
+    <h1>Button 专用属性展示</h1>
+    <h2>所有类型通用属性</h2>
+    <section>
+        <h3>type</h3>
+        <p>类型：可选 button | reset | submit</p>
+        <p>描述：按钮的类型</p>
+        <p>写法：&lt;button type="submit"&gt;Submit Button&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit">Submit Button</button>
+    </section>
+
+    <br>
+    
+    <section>
+        <h3>autofocus</h3>
+        <p>类型：autofocus</p>
+        <p>描述：页面加载时自动获得焦点</p>
+        <p>写法：&lt;button autofocus&gt;Autofocus Button&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button autofocus>Autofocus Button</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>disabled</h3>
+        <p>类型：disabled</p>
+        <p>描述：禁用按钮</p>
+        <p>写法：&lt;button disabled&gt;Disabled Button&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button disabled>Disabled Button</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>form</h3>
+        <p>类型：form_id</p>
+        <p>描述：指定按钮所属的表单的ID</p>
+        <p>写法：&lt;button form="form1"&gt;Submit Button&lt;/button&gt;</p>
+        <p>输出：</p>
+        <form id="form1">
+            <input type="text" name="username" placeholder="Username">
+        </form>
+        <button form="form1">Submit Button</button>
+    </section>
+
+    <br>
+    <h2>仅用于type="sumbit"</h2>
+    <section>
+        <h3>name</h3>
+        <p>类型：name</p>
+        <p>描述：按钮的名字(仅用于 type="submit")</p>
+        <p>写法：&lt;button name="myButton"&gt;Named Button&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button name="myButton">Named Button</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>value</h3>
+        <p>类型：text</p>
+        <p>描述：按钮的值(仅用于 type="submit")</p>
+        <p>写法：&lt;button value="ButtonValue"&gt;Button with Value&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button value="ButtonValue">Button with Value</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>formaction</h3>
+        <p>类型：URL</p>
+        <p>描述：指定提交表单的URL (仅用于 type="submit")</p>
+        <p>写法：&lt;button type="submit" formaction="http://example.com"&gt;Submit to Example&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit" formaction="http://example.com">Submit to Example</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>formenctype</h3>
+        <p>类型：可选</p>
+        <p>描述：指定提交表单的编码类型 (仅用于 type="submit")</p>
+        <p>写法：&lt;button type="submit" formenctype="multipart/form-data"&gt;Submit with Enctype&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit" formenctype="multipart/form-data">Submit with Enctype</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>formmethod</h3>
+        <p>类型：可选</p>
+        <p>描述：指定提交表单的方法 (仅用于 type="submit")</p>
+        <p>写法：&lt;button type="submit" formmethod="post"&gt;Submit with POST&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit" formmethod="post">Submit with POST</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>formnovalidate</h3>
+        <p>类型：formnovalidate</p>
+        <p>描述：提交表单时不进行验证 (仅用于 type="submit")</p>
+        <p>写法：&lt;button type="submit" formnovalidate&gt;Submit without Validation&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit" formnovalidate>Submit without Validation</button>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>formtarget</h3>
+        <p>类型：可选</p>
+        <p>描述：指定提交表单后返回结果的打开方式 (仅用于 type="submit")</p>
+        <p>写法：&lt;button type="submit" formtarget="_blank"&gt;Submit to New Tab&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button type="submit" formtarget="_blank">Submit to New Tab</button>
+    </section>
+
+    <br>
+
+    <h2>弹出弹窗相关属性</h2>
+    <section>
+        <h3>popovertarget</h3>
+        <p>类型：element_id</p>
+        <p>描述：指定要调用的弹出元素，通过指定元素的 id 来触发该弹出元素</p>
+        <p>写法：&lt;button popovertarget="popover1"&gt;Show Popover&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button popovertarget="popover1">Show Popover</button>
+        <div id="popover1" style="display: none;">这是一个弹出元素</div>
+    </section>
+
+    <br>
+
+    <section>
+        <h3>popovertargetaction</h3>
+        <p>类型：可选</p>
+        <p>描述：指定按钮被点击时对弹出元素进行的操作</p>
+        <p>写法：&lt;button popovertarget="popover1" popovertargetaction="toggle"&gt;Toggle Popover&lt;/button&gt;</p>
+        <p>输出：</p>
+        <button popovertarget="popover1" popovertargetaction="toggle">Toggle Popover</button>
+        <div id="popover1" style="display: none;">这是一个弹出元素</div>
+    </section>
+</body>
+</html>
