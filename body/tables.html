@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <h1>表格</h1>
+    
+    <h2>&lt;table&gt;</h2>
+    <p>用于创建表格。</p>
+    <p>可以在其中嵌套 &lt;caption&gt;、&lt;thead&gt;、&lt;tbody&gt;; 和 &lt;tfoot&gt; 等元素。</p>
+    
+    <h2>&lt;caption&gt;</h2>
+    <p>用于为表格添加标题。</p>
+    <p>必须紧跟在&lt;table&gt; 标签后面定义。</p>
+    <table>
+        <caption>表格标题</caption>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <h2>&lt;tr&gt;</h2>
+    <p>用于定义表格中的行。</p>
+    <p>每个 &lt;tr&gt;标签表示表格中的一行。</p>
+    
+    <h2>&lt;th&gt;</h2>
+    <p>用于定义表头单元格。</p>
+    <ul>
+        <li>abbr: 缩写版本的表头内容。</li>
+        <li>headers: 指定当前单元格与一个或多个头部单元格的关系。</li>
+        <li>colspan: 指定表头单元格跨越的列数。</li>
+        <li>rowspan: 指定表头单元格跨越的行数。</li>
+        <li>scope: 指定表头单元格的角色（列头、列组头、行头或行组头）。</li>
+    </ul>
+    <p>用于表格的标题行，可以跨列或跨行。</p>
+    
+    <h2>&lt;td&gt;</h2>
+    <p>用于定义表格中的数据单元格。</p>
+    <ul>
+        <li>colspan: 指定数据单元格跨越的列数。</li>
+        <li>rowspan: 指定数据单元格跨越的行数。</li>
+        <li>headers: 指定当前单元格与一个或多个头部单元格的关系。</li>
+    </ul>
+    <p>用于表格中的数据行。</p>
+    
+    <h2>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+    <p>&lt;thead&gt; 用于定义表格的表头部分，&lt;tbody&gt; 用于定义表格的主体部分，&lt;tfoot&gt; 用于定义表格的页脚部分。</p>
+    <p>用于将表格分为逻辑上的不同部分，使得表头和页脚可以在不同情况下独立显示。</p>
+    
+    <h2>&lt;col&gt;</h2>
+    <p>用于定义表格中某列的属性。</p>
+    <ul>
+        <li>span: 指定列跨越的列数。</li>
+    </ul>
+    <p>用于为表格的列应用样式或其他属性。</p>
+    
+    <h2>&lt;colgroup&gt;</h2>
+    <p>用于将表格中的列组合到一个逻辑组。</p>
+    <p>常与 <col> 元素一起使用，可以为整个列组指定样式或其他属性。</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子窗口</title>
+</head>
+<body>
+    <h1>子窗口</h1>
+    
+    <h2>`&lt;iframe&gt;`</h2>
+
+    <p><code>&lt;iframe&gt;&lt;/iframe&gt;</code> 元素用于在当前HTML文档中嵌入另一个文档。</p>
+    
+    <h3>写法：</h3>
+    <p>&lt;iframe src="https://www.example.com" width="400" height="400" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</p>
+    <h3>输出：</h3>
+    <iframe src="https://www.example.com" width="400" height="400" frameborder="0" allowfullscreen="true" allowpaymentrequest="true"></iframe>
+    
+    <p>这里涉及到跨越的操作了</p>
+    <h3>特殊属性</h3>
+    <ul>
+        <li>allow: 指定一个功能策略，允许或禁止某些特性在 ``&lt;iframe&gt;`` 中使用。</li>
+        <br>
+        <li>allowfullscreen (可选): 控制是否可以进入全屏模式。</li>
+        <br>
+        <li>allowpaymentrequest (可选): 控制是否允许跨域 ``&lt;iframe&gt;`` 调用 Payment Request API。</li>
+        <br>
+        <li>height: 指定 ``&lt;iframe&gt;`` 的高度，单位为像素。</li>
+        <br>
+        <li>width: 指定 ``&lt;iframe&gt;`` 的宽度，单位为像素。</li>
+        <br>
+        <li>loading (可选): 指定 ``&lt;iframe&gt;`` 的加载策略。</li>
+        <br>
+        <li>name: 指定 ``&lt;iframe&gt;`` 的名称。</li>
+        <br>
+        <li>refererpolicy (可选): 用于指定在获取 ``&lt;iframe&gt;`` 资源时发送的Referer信息。</li>
+        <br>
+        <li>sandbox (可选): 启用一些原本对 ``&lt;iframe&gt;`` 中内容进行的限制。</li>
+        <br>
+        <li>src: 指定要嵌入 ``&lt;iframe&gt;`` 中的文档地址。</li>
+        <br>
+        <li>srcdoc: 指定在 ``&lt;iframe&gt;`` 中显示的HTML内容。</li>
+    </ul>
+</body>
+</html>

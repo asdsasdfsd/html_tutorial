@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表</title>
+</head>
+<body>
+    <h1>列表</h1>
+    
+    <h2>&lt;menu&gt;</h2>
+    <p>用于创建内容无序的菜单。</p>
+    <p>可以与 &lt;li&gt; 标签一起创建菜单项。注意，&lt;menu&gt; 标签是 &lt;ul&gt; 标签的替代品，浏览器将同等对待这两种列表。</p>
+    <code>&lt;menu&gt;<br>
+        &lt;li&gt;菜单项 1&lt;/li&gt;<br>
+        &lt;li&gt;菜单项 2&lt;/li&gt;<br>
+        &lt;li&gt;菜单项 3&lt;/li&gt;<br>
+    &lt;/menu&gt;</code><br>
+    <menu>
+        <li>菜单项 1</li>
+        <li>菜单项 2</li>
+        <li>菜单项 3</li>
+    </menu>
+    
+    <h2>&lt;ul&gt;</h2>
+    <p>用于创建内容无序的列表。</p>
+    <p>小技巧：可以与 &lt;li&gt; 标签一起创建列表项。</p>
+    <code>&lt;ul&gt;<br>
+        &lt;li&gt;列表项 1&lt;/li&gt;<br>
+        &lt;li&gt;列表项 2&lt;/li&gt;<br>
+        &lt;li&gt;列表项 3&lt;/li&gt;<br>
+    &lt;/ul&gt;</code><br>
+    <ul>
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+    </ul>
+    
+    <h2>&lt;ol&gt;</h2>
+    <p>用于创建内容有序的列表。</p>
+    <ul>
+        <li>reversed: 可选，如果存在，则列表将反向排序。</li>
+        <li>start: 可选，指定列表开始的数字。</li>
+        <li>type: 可选，指定列表项的类型（1, A, a, I, i）。</li>
+    </ul>
+    <p>可以与 &lt;li&gt; 标签一起创建有序列表项。</p>
+    <code>&lt;ol&gt;<br>
+        &lt;li value="1"&gt;有序列表项 1&lt;/li&gt;<br>
+        &lt;li value="2"&gt;有序列表项 2&lt;/li&gt;<br>
+        &lt;li value="3"&gt;有序列表项 3&lt;/li&gt;<br>
+    &lt;/ol&gt;</code><br>
+    <ol>
+        <li value="1">有序列表项 1</li>
+        <li value="2">有序列表项 2</li>
+        <li value="3">有序列表项 3</li>
+    </ol>
+    
+    <h2>&lt;li&gt;</h2>
+    <p>用于定义列表中的每个项。</p>
+    <ul>
+        <li>value: 仅用于 &lt;ol&gt;，指定有序列表项的值。</li>
+    </ul>
+    <p>小技巧：&lt;li&gt; 标签通常与 &lt;ul&gt; 或 &lt;ol&gt; 标签一起使用，定义列表项。</p>
+    <code>&lt;li&gt;无序列表项 1&lt;/li&gt;<br>
+        &lt;li&gt;无序列表项 2&lt;/li&gt;<br>
+        &lt;li&gt;无序列表项 3&lt;/li&gt;</code><br>
+    <ul>
+        <li>无序列表项 1</li>
+        <li>无序列表项 2</li>
+        <li>无序列表项 3</li>
+    </ul>
+    <ol>
+        <li value="1">有序列表项 1</li>
+        <li value="2">有序列表项 2</li>
+        <li value="3">有序列表项 3</li>
+    </ol>
+    
+    <h2>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
+    <p>&lt;dl&gt; 用于定义描述列表，&lt;dt&gt; 定义术语或名称，&lt;dd&gt; 描述每个术语或名称。</p>
+    <p>小技巧：&lt;dl&gt;、&lt;dt&gt; 和 &lt;dd&gt; 标签一起使用，用于创建描述列表。</p>
+    <code>&lt;dl&gt;<br>
+        &lt;dt&gt;术语 1&lt;/dt&gt;<br>
+        &lt;dd&gt;描述 1&lt;/dd&gt;<br>
+        
+        &lt;dt&gt;术语 2&lt;/dt&gt;<br>
+        &lt;dd&gt;描述 2&lt;/dd&gt;<br>
+        
+        &lt;dt&gt;术语 3&lt;/dt&gt;<br>
+        &lt;dd&gt;描述 3&lt;/dd&gt;<br>
+    &lt;/dl&gt;</code><br>
+    <dl>
+        <dt>术语 1</dt>
+        <dd>描述 1</dd>
+        
+        <dt>术语 2</dt>
+        <dd>描述 2</dd>
+        
+        <dt>术语 3</dt>
+        <dd>描述 3</dd>
+    </dl>
+    
+</body>
+</html>

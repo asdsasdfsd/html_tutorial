@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌入式内容相关组件</title>
+</head>
+<body>
+    <h1>嵌入式内容相关组件</h1>
+    
+    <h2>&lt;script&gt;</h2>
+    <p>&lt;script&gt; 标签用于嵌入客户端脚本（JavaScript）。</p>
+    <ul>
+        <li>async: 指定脚本在下载时与页面解析并行进行，脚本下载完毕后立即执行。</li>
+        <li>crossorigin: 设置请求的 CORS 模式。</li>
+        <li>defer: 指定脚本在下载时与页面解析并行进行，但延迟执行直到页面解析完毕。</li>
+        <li>integrity: 允许浏览器检查下载的脚本文件，以确保文件未被篡改。</li>
+        <li>nomodule: 指定脚本不应在支持 ES2015 模块的浏览器中执行。</li>
+        <li>referrerpolicy: 指定获取脚本时发送的引用信息。</li>
+        <li>src: 指定外部脚本文件的 URL。</li>
+        <li>type: 指定脚本文件的 MIME 类型。</li>
+    </ul>
+    <p>可以通过 &lt;script&gt; 标签嵌入脚本或引用外部脚本文件，用于网页交互和功能扩展。</p>
+    
+    <h2>&lt;noscript&gt;</h2>
+    <p>&lt;noscript&gt; 标签用于处理禁用了浏览器脚本或不支持客户端脚本的用户情况。</p>
+    <p>通常在需要向用户显示替代内容或信息时使用。</p>
+    
+    <h2>&lt;embed&gt;</h2>
+    <p>&lt;embed&gt; 标签定义了一个容器，用于嵌入外部资源，如网页、图片、媒体播放器或插件应用程序。</p>
+    <ul>
+        <li>height: 指定嵌入内容的高度。</li>
+        <li>width: 指定嵌入内容的宽度。</li>
+        <li>src: 指定嵌入内容的 URL。</li>
+        <li>type: 指定嵌入内容的 MIME 类型。</li>
+    </ul>
+    <p>对于图片、音视频等内容的嵌入，推荐使用更适合的标签如 &lt;img&gt;、&lt;video&gt; 或 &lt;audio&gt;。</p>
+    
+    <h2>&lt;object&gt;</h2>
+    <p>&lt;object&gt; 标签定义了一个容器，用于包含外部资源，如网页、图片、媒体播放器或插件应用程序。</p>
+    <ul>
+        <li>data: 指定 &lt;object&gt; 元素所引用资源的 URL。</li>
+        <li>form: 指定 &lt;object&gt; 元素所属的表单。</li>
+        <li>height: 指定嵌入内容的高度。</li>
+        <li>width: 指定嵌入内容的宽度。</li>
+        <li>name: 指定 &lt;object&gt; 元素的名称。</li>
+        <li>type: 指定嵌入内容的 MIME 类型。</li>
+        <li>typemustmatch: 指定是否要求 &lt;object&gt; 元素的 type 属性与实际资源的 MIME 类型匹配。</li>
+        <li>usemap: 指定 &lt;object&gt; 元素要使用的客户端图像映射的名称。</li>
+    </ul>
+
+    
+    <p>用于嵌入各种外部资源，但大多数浏览器已不再支持插件类型的内容，建议使用更现代化的替代方案。</p>
+    
+    <h2>&lt;param&gt;</h2>
+    <p>&lt;param&gt; 标签用于为 &lt;object&gt; 元素提供参数，通常用于插件或嵌入式应用程序的配置。</p>
+    <ul>
+        <li>name: 参数名称。</li>
+        <li>value: 参数值。</li>
+    </ul>
+    <p>与 &lt;object&gt;元素配合使用，提供初始化参数或配置信息。</p>
+</body>
+</html>

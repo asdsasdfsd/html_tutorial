@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频和视频相关组件</title>
+</head>
+<body>
+    <h1>音频和视频相关组件</h1>
+    
+    <h2>&lt;audio&gt;</h2>
+    <p>用于在网页中嵌入音频。</p>
+    <ul>
+        <li>autoplay: 指定音频在准备好后立即开始播放。</li>
+        <li>controls: 指定显示音频控件，如播放/暂停按钮等。</li>
+        <li>loop: 指定音频在播放结束后重新开始。</li>
+        <li>muted: 指定音频输出应静音。</li>
+        <li>preload: 可选，指定页面加载时音频文件的加载方式。</li>
+        <li>src: 指定音频文件的 URL。</li>
+    </ul>
+    
+    <h2>&lt;source&gt;</h2>
+    <p>用于为 &lt;audio&gt; 和 &lt;video&gt; 元素定义多个媒体来源。</p>
+    <ul>
+        <li>src: 必需属性，指定媒体文件的 URL。</li>
+        <li>type: 指定资源的 MIME 类型。</li>
+        <li>media: 接受任何有效的媒体查询，通常在 CSS 中定义。</li>
+        <li>sizes: 指定不同页面布局下的图像尺寸，通常与 srcset 属性配合使用。</li>
+        <li>srcset: 指定在不同情况下使用的图像 URL，当用于 &lt;picture&gt; 元素时是必需的。</li>
+    </ul>
+    
+    <h2>&lt;track&gt;</h2>
+    <p>用于为 &lt;video&gt; 和 &lt;audio&gt; 元素定义文本轨道，如字幕、标题等。</p>
+    <ul>
+        <li>default: 指定如果用户偏好不指示其他轨道更合适时，此轨道将被启用。</li>
+        <li>kind: 可选，指定文本轨道的类型。</li>
+        <li>label: 指定文本轨道的标题。</li>
+        <li>src: 必需属性，指定文本轨道文件的 URL。</li>
+        <li>srclang: 指定文本轨道文本数据的语言，如果 kind 属性设置为 subtitles，则此属性是必需的。</li>
+    </ul>
+    
+    <h2>&lt;video&gt;</h2>
+    <p>用于在网页中嵌入视频。</p>
+    <ul>
+        <li>autoplay: 指定视频在准备好后立即开始播放。</li>
+        <li>controls: 指定应显示视频控件，如播放/暂停按钮。</li>
+        <li>height 和 width: 指定视频的高度和宽度。</li>
+        <li>loop: 指定视频在播放结束后重新开始。</li>
+        <li>muted: 指定视频的音频输出应静音。</li>
+        <li>poster: 指定一个图片 URL，在视频下载时显示，或者在用户点击播放按钮前显示。</li>
+        <li>preload: 可选，指定页面加载时视频的加载方式。</li>
+        <li>src: 指定视频文件的 URL。</li>
+    </ul>
+    
+</body>
+</html>

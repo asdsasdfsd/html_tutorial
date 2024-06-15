@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>媒体事件</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>媒体事件</h1>
+    <ul>
+        <li><a href="#" onclick="onabort()">onabort</a>: 当加载过程中用户终止加载时触发。</li>
+        <li><a href="#" onclick="oncanplay()">oncanplay</a>: 当媒体可以开始播放时触发，但可能需要缓冲更多数据。</li>
+        <li><a href="#" onclick="oncanplaythrough()">oncanplaythrough</a>: 当媒体可以一直播放到结束而不需暂停以缓冲更多数据时触发。</li>
+        <li><a href="#" onclick="oncuechange()">oncuechange</a>: 当 <code>&lt;track&gt;</code> 元素的文本轨迹（captions/subtitles）发生变化时触发。</li>
+        <li><a href="#" onclick="ondurationchange()">ondurationchange</a>: 当媒体的时长发生变化时触发。</li>
+        <li><a href="#" onclick="onemptied()">onemptied</a>: 当媒体资源突然不可用时触发，例如意外断开连接。</li>
+        <li><a href="#" onclick="onended()">onended</a>: 当媒体播放到结束时触发。</li>
+        <li><a href="#" onclick="onerror()">onerror</a>: 当加载或播放媒体时发生错误时触发。</li>
+        <li><a href="#" onclick="onloadeddata()">onloadeddata</a>: 当媒体的基础数据加载完成时触发。</li>
+        <li><a href="#" onclick="onloadedmetadata()">onloadedmetadata</a>: 当媒体的元数据（如尺寸和时长）加载完成时触发。</li>
+        <li><a href="#" onclick="onloadstart()">onloadstart</a>: 当开始加载媒体时触发，但实际数据尚未加载。</li>
+        <li><a href="#" onclick="onpause()">onpause</a>: 当媒体暂停时触发，可以是用户操作或通过编程接口。</li>
+        <li><a href="#" onclick="onplay()">onplay</a>: 当媒体准备好开始播放时触发。</li>
+        <li><a href="#" onclick="onplaying()">onplaying</a>: 当媒体实际开始播放时触发。</li>
+        <li><a href="#" onclick="onprogress()">onprogress</a>: 当浏览器正在获取媒体数据时触发。</li>
+        <li><a href="#" onclick="onratechange()">onratechange</a>: 当媒体播放速率发生变化时触发，例如用户切换到慢动作或快进模式。</li>
+        <li><a href="#" onclick="onseeked()">onseeked</a>: 当媒体完成跳跃操作（seek）时触发，即寻找动作结束。</li>
+        <li><a href="#" onclick="onseeking()">onseeking</a>: 当媒体正在执行跳跃操作时触发，即寻找动作进行中。</li>
+        <li><a href="#" onclick="onstalled()">onstalled</a>: 当浏览器无法获取媒体数据时触发，例如由于网络问题。</li>
+        <li><a href="#" onclick="onsuspend()">onsuspend</a>: 当媒体数据加载被停止或暂停时触发。</li>
+        <li><a href="#" onclick="ontimeupdate()">ontimeupdate</a>: 当媒体播放位置发生改变时触发，例如用户快进到媒体的不同位置。</li>
+        <li><a href="#" onclick="onvolumechange()">onvolumechange</a>: 当媒体音量发生变化时触发，包括将音量设置为静音。</li>
+        <li><a href="#" onclick="onwaiting()">onwaiting</a>: 当媒体暂停以缓冲更多数据时触发，但预计媒体将继续播放时。</li>
+    </ul>
+</body>
+</html>
